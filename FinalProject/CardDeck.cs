@@ -10,53 +10,22 @@ namespace FinalProject
     class CardDeck
     {
 
-
         private Stack<Card> deck; //!< Member variable "*deck"
         private int numLeft; //!< Member variable "numLeft"
         private int shuffleAt; //!< Member variable "shuffleAt"
         private int minPlayable; //!< Member variable "minPlayable"
 
-
-
-
-        /** Access *deck
-         * \return The current value of *deck
-         */
         public Stack<Card> Getdeck() { return deck; }
-        /** Set *deck
-         * \param val New value to set
-         */
         public void Setdeck(Stack<Card> deck) { this.deck = deck; }
-        /** Access numLeft
-         * \return The current value of numLeft
-         */
         public int GetnumLeft() { return numLeft; }
-        /** Set numLeft
-         * \param val New value to set
-         */
         public void SetnumLeft(int val) { numLeft = val; }
-        /** Access shuffleAt
-         * \return The current value of shuffleAt
-         */
         public int GetshuffleAt() { return shuffleAt; }
-        /** Set shuffleAt
-         * \param val New value to set
-         */
+
         public void SetshuffleAt(int val) { shuffleAt = val; }
-        /** Access minPlayable
-         * \return The current value of minPlayable
-         */
+
         public int GetminPlayable() { return minPlayable; }
-        /** Set minPlayable
-         * \param val New value to set
-         */
+
         public void SetminPlayable(int val) { minPlayable = val; }
-
-
-
-
-
-
 
         public CardDeck()
         {
