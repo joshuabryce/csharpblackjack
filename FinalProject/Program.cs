@@ -48,7 +48,7 @@ namespace FinalProject
                 //catch (Exception)
                 else //using an all inclusive try catch block is not a best practice, ALL exceptions will fall here and it makes it hard to debug
                 {
-                    Console.WriteLine("input needs to be an integer number");
+                    Console.WriteLine("Please enter in a valid input choice from 1 to 3");
                 }
 
 
