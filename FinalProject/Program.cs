@@ -10,6 +10,13 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("██████╗ ██╗      █████╗  ██████╗██╗  ██╗     ██╗ █████╗  ██████╗██╗  ██╗");
+            Console.WriteLine("██╔══██╗██║     ██╔══██╗██╔════╝██║ ██╔╝     ██║██╔══██╗██╔════╝██║ ██╔╝");
+            Console.WriteLine("██████╔╝██║     ███████║██║     █████╔╝      ██║███████║██║     █████╔╝ ");
+            Console.WriteLine("██╔══██╗██║     ██╔══██║██║     ██╔═██╗ ██   ██║██╔══██║██║     ██╔═██╗ ");
+            Console.WriteLine("██████╔╝███████╗██║  ██║╚██████╗██║  ██╗╚█████╔╝██║  ██║╚██████╗██║  ██╗");
+            Console.WriteLine("╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝");
             /*CardDeck deck = new CardDeck();
             //Console.ReadLine();
 
