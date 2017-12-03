@@ -10,12 +10,14 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
-
-            CardDeck deck = new CardDeck();
+            /*CardDeck deck = new CardDeck();
             //Console.ReadLine();
-            //♠ 	♥ 	♦ 	♣
+
             deck.shuffle();
-            deck.printDeck();
+            deck.printDeck();*/
+
+            BlackJack blackJack = new BlackJack();
+            
             Console.ReadLine();
         }
     }
