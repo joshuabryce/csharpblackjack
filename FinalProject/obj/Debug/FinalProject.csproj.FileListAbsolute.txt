@@ -1,0 +1,7 @@
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\w7056950\Source\Repos\New folder (2)\brycej\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
