@@ -25,6 +25,5 @@ namespace FinalProject
             return String.Format("{0} has {1} total left in chips", PID, Chips);
         }
 
-
     }
 }

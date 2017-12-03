@@ -25,6 +25,5 @@ namespace FinalProject
             playerStats.Clear();
         }
 
-
     }
 }
