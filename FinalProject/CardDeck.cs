@@ -17,7 +17,7 @@ namespace FinalProject
 
         public Stack<Card> Getdeck() { return deck; }
         public void Setdeck(Stack<Card> deck) { this.deck = deck; }
-        public int GetnumLeft() { return numLeft; }
+        public int GetnumLeft() { return numLeft=deck.Count; }
         public void SetnumLeft(int val) { numLeft = val; }
         public int GetshuffleAt() { return shuffleAt; }
 
