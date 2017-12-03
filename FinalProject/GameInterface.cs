@@ -32,6 +32,10 @@ namespace FinalProject
             Console.WriteLine("To beat the dealer's hand without exceeding a count of 21");
             Console.WriteLine("in order to win as much money from the dealer (the casino)");
             Console.WriteLine("as you can.");
+        }
+
+        public void ShowBoard(/*some varibles should be added here to properly show board*/)
+        {
 
         }
 
