@@ -47,6 +47,7 @@
     <Compile Include="CardDeck.cs" />
     <Compile Include="CardHand.cs" />
     <Compile Include="DealerHand.cs" />
+    <Compile Include="GameInterface.cs" />
     <Compile Include="GameStats.cs" />
     <Compile Include="PlayerHand.cs" />
     <Compile Include="PlayerStats.cs" />

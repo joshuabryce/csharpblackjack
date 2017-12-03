@@ -10,13 +10,47 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
+            GameInterface draw = new GameInterface();
+            int menuchoice = 0;
+            bool inMenu = true;
 
-            Console.WriteLine("██████╗ ██╗      █████╗  ██████╗██╗  ██╗     ██╗ █████╗  ██████╗██╗  ██╗");
-            Console.WriteLine("██╔══██╗██║     ██╔══██╗██╔════╝██║ ██╔╝     ██║██╔══██╗██╔════╝██║ ██╔╝");
-            Console.WriteLine("██████╔╝██║     ███████║██║     █████╔╝      ██║███████║██║     █████╔╝ ");
-            Console.WriteLine("██╔══██╗██║     ██╔══██║██║     ██╔═██╗ ██   ██║██╔══██║██║     ██╔═██╗ ");
-            Console.WriteLine("██████╔╝███████╗██║  ██║╚██████╗██║  ██╗╚█████╔╝██║  ██║╚██████╗██║  ██╗");
-            Console.WriteLine("╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝");
+            draw.ShowTitle();
+            do
+            {
+                try
+                {
+                    draw.DisplayMenu();
+                    menuchoice = Int32.Parse(Console.ReadLine());
+
+                    //executing the menu
+                    switch (menuchoice)
+                    {
+                        case 1:
+                            //PlayGame();
+                            break;
+                        case 2:
+                            draw.ShowInstructions();
+                            inMenu = true;
+                            break;
+                        case 3:
+                            Console.WriteLine("Goodbye");
+                            Environment.Exit(0);
+                            break;
+                        default:
+                            Console.WriteLine("Invalid menu choice");
+                            break;
+                    }
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("input needs to be an integer number");
+                }
+
+
+            } while (inMenu);
+
+            Console.ReadLine();
             /*CardDeck deck = new CardDeck();
             //Console.ReadLine();
 
