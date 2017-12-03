@@ -44,7 +44,7 @@ namespace FinalProject
                 }
                 catch (Exception)
                 {
-                    Console.WriteLine("input needs to be an integer number");
+                    Console.WriteLine("Please enter in a valid input choice from 1 to 3");
                 }
 
 
