@@ -10,6 +10,7 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
+            BlackJack blackJack = new BlackJack();
             GameInterface draw = new GameInterface();
             int menuchoice = 0;
             bool inMenu = true;
@@ -17,15 +18,17 @@ namespace FinalProject
             draw.ShowTitle();
             do
             {
-                try
-                {
-                    draw.DisplayMenu();
-                    menuchoice = Int32.Parse(Console.ReadLine());
+                //try
+                //{
+                draw.DisplayMenu();
+                bool result = Int32.TryParse(Console.ReadLine(), out menuchoice);
+                if (result) { 
 
                     //executing the menu
                     switch (menuchoice)
                     {
                         case 1:
+                            blackJack.Play();
                             //PlayGame();
                             break;
                         case 2:
@@ -42,7 +45,8 @@ namespace FinalProject
                     }
 
                 }
-                catch (Exception)
+                //catch (Exception)
+                else //using an all inclusive try catch block is not a best practice, ALL exceptions will fall here and it makes it hard to debug
                 {
                     Console.WriteLine("input needs to be an integer number");
                 }
@@ -57,7 +61,7 @@ namespace FinalProject
             deck.shuffle();
             deck.printDeck();*/
 
-            BlackJack blackJack = new BlackJack();
+            
             
             Console.ReadLine();
         }
