@@ -10,9 +10,10 @@ namespace FinalProject
     {
         static void Main(string[] args)
         {
+
             CardDeck deck = new CardDeck();
             //Console.ReadLine();
-
+            //♠ 	♥ 	♦ 	♣
             deck.shuffle();
             deck.printDeck();
             Console.ReadLine();
