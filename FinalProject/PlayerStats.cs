@@ -12,17 +12,21 @@ namespace FinalProject
         private double balance;
 
         public string PID { get; set; } // player ID
-        public double Chips { get; set; } // how much money they have in the bank
+        public double PlayerMoney { get; set; } // how much money they have in the bank
 
+        public PlayerStats()
+        {
+            //empty constructor
+        }
         public PlayerStats(string playerIdentification, double Money)
         {
             PID = playerIdentification;
-            Chips = Money;
+            PlayerMoney = Money;
         }
 
         public override string ToString()
         {
-            return String.Format("{0} has {1} total left in chips", PID, Chips);
+            return String.Format("{0} has {1} total left in chips", PID, PlayerMoney);
         }
 
     }
