@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{3A45F055-10CC-42E0-BE7B-B990E2DD9D71}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FinalProject/GameInterface.cs">
+    <Files>
+      <File FileName="FinalProject/GameInterface.cs" Line="38" Column="45" />
+      <File FileName="FinalProject/BlackJack.cs" Line="42" Column="14" />
+      <File FileName="FinalProject/Card.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/CardDeck.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/CardHand.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/DealerHand.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/GameStats.cs" Line="22" Column="9" />
+      <File FileName="FinalProject/PlayerHand.cs" Line="1" Column="1" />
+      <File FileName="FinalProject/PlayerStats.cs" Line="26" Column="9" />
+      <File FileName="FinalProject/Program.cs" Line="35" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FinalProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -50,9 +50,9 @@ namespace FinalProject
                 }
             }
 
-            int numLeft = 0; //!< Member variable "numLeft"
-            int shuffleAt = 15; //!< Member variable "shuffleAt"
-            int minPlayable = 0; //!< Member variable "minPlayable"
+            // numLeft = 0; //!< Member variable "numLeft"
+             shuffleAt = 15; //!< Member variable "shuffleAt"
+             minPlayable = 15; //!< Member variable "minPlayable"
         }
 
 
@@ -67,10 +67,10 @@ namespace FinalProject
 
         public void printDeck()
         {
-            Card[] copyDeck = new Card[52];
+            Card[] copyDeck = new Card[deck.Count];
             deck.CopyTo(copyDeck,0);
             
-
+            /*
             int count = 0;
             for (int i = 0; i < 4; i++)
             {
@@ -80,6 +80,11 @@ namespace FinalProject
                     Console.WriteLine(copyDeck[count].GetSuit() + " " + copyDeck[count].GetRank());
                     count++;
                 }
+            }
+            */
+            for(int i=0; i< deck.Count; i++)
+            {
+                Console.WriteLine(i + " "+copyDeck[i].GetSuit() + " " + copyDeck[i].GetRank());
             }
         }
     }
