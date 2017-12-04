@@ -11,6 +11,7 @@ namespace FinalProject
         private CardDeck cardDeck;
         private PlayerHand playerHand;
         private DealerHand dealerHand;
+        private double betAmt;
 
         public BlackJack()
         {
@@ -129,5 +130,17 @@ namespace FinalProject
             playerHand.clearHand();
             dealerHand.clearHand();
         }
+        public void SetBetAmt(int chips)
+        {
+            //Console.WriteLine("How many chips to throw in?");
+            // each chip is worth 5 bucks
+            betAmt = chips * 5;
+        }
+
+        public double GetBetAmt()
+        {
+            return betAmt;
+        }
+
     }
 }
