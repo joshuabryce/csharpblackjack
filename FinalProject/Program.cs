@@ -29,7 +29,6 @@ namespace FinalProject
                     {
                         case 1:
                             blackJack.Play();
-                            //PlayGame();
                             break;
                         case 2:
                             draw.ShowInstructions();

@@ -29,9 +29,20 @@ namespace FinalProject
         public void ShowInstructions()
         {
             Console.WriteLine("The Object of the Game\n");
-            Console.WriteLine("To beat the dealer's hand without exceeding a count of 21");
-            Console.WriteLine("in order to win as much money from the dealer (the casino)");
-            Console.WriteLine("as you can.");
+            Console.WriteLine("The first basic rule of blackjack is simple: " +
+                              "\nbeat the dealer’s hand without going over 21");
+            Console.WriteLine("Each round, the dealer deals each card to the player");
+            Console.WriteLine("Based on the card the player is dealt, the player");
+            Console.WriteLine("will then decide whether or not they want to ");
+            Console.WriteLine("have another card dealt to them.");
+            Console.WriteLine("If the player wants an additional card");
+            Console.WriteLine("he/she will announce 'hit me', otherwise");
+            Console.WriteLine("they will announce 'stay'.");
+            Console.WriteLine("If the player goes over 21, the player loses.");
+            Console.WriteLine("Likewise if the dealer goes over 21, the dealer loses.");
+            Console.WriteLine("The first player to reach 21 wins the round,");
+            Console.WriteLine("if both the dealer and the player have under 21, then");
+            Console.WriteLine("the person with the higher number wins the round.");
         }
 
         public void ShowBoard(/*some varibles should be added here to properly show board*/)
