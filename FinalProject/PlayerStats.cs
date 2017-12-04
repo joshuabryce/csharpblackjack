@@ -12,16 +12,16 @@ namespace FinalProject
         private double balance;
 
         public string PID { get; set; } // player ID
-        public double PlayerMoney { get; set; } // how much money they have in the bank
+        public int PlayerMoney { get; set; } // how much money they have in the bank
 
         public PlayerStats()
         {
             //empty constructor
         }
-        public PlayerStats(string playerIdentification, double Money)
+        public PlayerStats(string playerIdentification, int moneyAmt)
         {
             PID = playerIdentification;
-            PlayerMoney = Money;
+            PlayerMoney = moneyAmt;
         }
 
         public override string ToString()

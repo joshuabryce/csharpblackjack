@@ -10,7 +10,7 @@ namespace FinalProject
     {
         private List<PlayerStats> playerStats ; //a list of player stats
 
-        private void LoadPlayerStats(string pid, double chips)
+        private void LoadPlayerStats(string pid, int chips)
         {
             playerStats.Add(new PlayerStats(pid, chips));
         }
