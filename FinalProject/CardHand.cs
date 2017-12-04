@@ -91,10 +91,11 @@ namespace FinalProject
                 
 
                 value +=currentCard;
-                if(value>21 && firstAce)
-                {
-                    value -= 10;
-                }
+                
+            }
+            if (value > 21 && firstAce)
+            {
+                value -= 10;
             }
             return value;
         }

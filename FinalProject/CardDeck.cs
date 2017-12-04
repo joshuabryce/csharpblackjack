@@ -50,9 +50,9 @@ namespace FinalProject
                 }
             }
 
-            int numLeft = 0; //!< Member variable "numLeft"
-            int shuffleAt = 15; //!< Member variable "shuffleAt"
-            int minPlayable = 0; //!< Member variable "minPlayable"
+            // numLeft = 0; //!< Member variable "numLeft"
+             shuffleAt = 15; //!< Member variable "shuffleAt"
+             minPlayable = 15; //!< Member variable "minPlayable"
         }
 
 

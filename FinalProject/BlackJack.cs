@@ -33,13 +33,17 @@ namespace FinalProject
 
         public void Play()
         {
+            if (GetCardDeck().GetnumLeft() < cardDeck.GetshuffleAt())
+            {
+                //cardDeck.shuffle();
+                CardDeck newDeck = new CardDeck();
+                cardDeck = newDeck;
+            }
+
             int playerHandValue = 0;
             string hitOrStay = "";
             Console.WriteLine(GetCardDeck().GetnumLeft());
-            if (GetCardDeck().GetnumLeft() < cardDeck.GetminPlayable())
-            {
-                cardDeck.shuffle();
-            }
+            
             
             playerHand.dealCard(cardDeck.drawCard(),true);
             dealerHand.dealCard(cardDeck.drawCard(),true);
@@ -70,11 +74,11 @@ namespace FinalProject
             if (playerHandValue > 21)
             {
                 Console.WriteLine("busted!");
-                
+                dealerWins();
             }
             else if (playerHandValue == 21)
             {
-                Console.WriteLine("player wins!");
+                playerWins();
             }
             else
             {
@@ -89,18 +93,35 @@ namespace FinalProject
                 dealerHand.printHand();
                 if (dealerHand.getValueOfHand() > 21)
                 {
-                    Console.WriteLine();
-                    Console.WriteLine("Player wins!");
 
+                    playerWins();
                 }
                 else if (playerHand.getValueOfHand()==dealerHand.getValueOfHand())
                 {
-                    Console.WriteLine("Tie!");
+                    tie();
+                    
                 }
             }
             //cardDeck.printDeck();
             //Console.ReadLine();
             restart();
+        }
+
+        public void playerWins()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Player wins!");
+        }
+
+        public void dealerWins()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dealer wins!");
+        }
+
+        public void tie()
+        {
+            Console.WriteLine("Tie!");
         }
 
         public void restart()
