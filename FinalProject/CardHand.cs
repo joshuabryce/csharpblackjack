@@ -64,12 +64,37 @@ namespace FinalProject
         public int getValueOfHand()
         {
             int value = 0;
+            int currentCard = 0;
+            bool firstAce = false;
             Card[] copyDeck = new Card[cards.Count];
             String[] stringDeck = new String[cards.Count];
             cards.CopyTo(copyDeck, 0);
             for (int i = 0; i < cards.Count; i++)
             {
-                value+=(int)copyDeck[i].GetRank()+1;
+                if ((int)copyDeck[i].GetRank() == 0 && !firstAce)
+                {
+                    firstAce = true;
+                    currentCard = 11;
+                }
+                else if((int)copyDeck[i].GetRank()>=9)
+                {
+                    currentCard = 10;
+                }
+                else if((int)copyDeck[i].GetRank() >0)
+                {
+                    currentCard = (int)copyDeck[i].GetRank() + 1;
+                }
+                else
+                {
+                    currentCard = 1;
+                }
+                
+
+                value +=currentCard;
+                if(value>21 && firstAce)
+                {
+                    value -= 10;
+                }
             }
             return value;
         }
