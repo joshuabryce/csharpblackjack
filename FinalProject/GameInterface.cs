@@ -10,12 +10,14 @@ namespace FinalProject
     {
         public void ShowTitle()
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("██████╗ ██╗      █████╗  ██████╗██╗  ██╗     ██╗ █████╗  ██████╗██╗  ██╗");
             Console.WriteLine("██╔══██╗██║     ██╔══██╗██╔════╝██║ ██╔╝     ██║██╔══██╗██╔════╝██║ ██╔╝");
             Console.WriteLine("██████╔╝██║     ███████║██║     █████╔╝      ██║███████║██║     █████╔╝ ");
             Console.WriteLine("██╔══██╗██║     ██╔══██║██║     ██╔═██╗ ██   ██║██╔══██║██║     ██╔═██╗ ");
             Console.WriteLine("██████╔╝███████╗██║  ██║╚██████╗██║  ██╗╚█████╔╝██║  ██║╚██████╗██║  ██╗");
             Console.WriteLine("╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝ ╚════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝");
+            Console.ResetColor();
         }
 
         public void DisplayMenu()
@@ -28,6 +30,7 @@ namespace FinalProject
 
         public void ShowInstructions()
         {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("The Object of the Game\n");
             Console.WriteLine("The first basic rule of blackjack is simple: " +
                               "\nbeat the dealer’s hand without going over 21");
@@ -43,6 +46,7 @@ namespace FinalProject
             Console.WriteLine("The first player to reach 21 wins the round,");
             Console.WriteLine("if both the dealer and the player have under 21, then");
             Console.WriteLine("the person with the higher number wins the round.");
+            Console.ResetColor();
         }
 
         public void ShowBoard(/*some varibles should be added here to properly show board*/)

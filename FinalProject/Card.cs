@@ -8,7 +8,7 @@ namespace FinalProject
 {
 
     public enum Suit { clubs, diamonds, hearts, spades }; //!< Member variable "{clubs,diamonds,hearts,spades}"
-    public enum Rank { ace, two, three, four, five, six, seven, eight, nine, ten, jack, queen, king }; //!< Member variable "{ace,1,2,3,4,5,6,7,8,9,10,jack,queen,king}"
+    public enum Rank { A, two, three, four, five, six, seven, eight, nine, ten, J, Q, K }; //!< Member variable "{ace,1,2,3,4,5,6,7,8,9,10,jack,queen,king}"
 
     class Card
     {

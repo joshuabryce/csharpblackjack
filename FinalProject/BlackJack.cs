@@ -60,11 +60,18 @@ namespace FinalProject
 
                 playerHand.dealCard(cardDeck.drawCard(), true);
                 dealerHand.dealCard(cardDeck.drawCard(), true);
-                Console.WriteLine("You currently have $" + playerMoney);
+                Console.Write("\nYou currently have ");
 
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$" + playerMoney +"\n");
+                Console.ResetColor();
                 do
                 {
-                    Console.WriteLine("How many chips are you willing to wager? (1 chip = $5)");
+                    Console.Write("\nHow many chips are you willing to wager? ");
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.Write("(1 chip = $5)\n");
+                    Console.ResetColor();
 
                     chipWager = Int32.Parse(Console.ReadLine());
                     if (chipWager < 1)
@@ -84,16 +91,29 @@ namespace FinalProject
                     else
                     {
                         goodwager = true;
-                        Console.WriteLine("You have wagered $" + totalWager);
+                        Console.Write("You have wagered ");
+
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.WriteLine("$" + totalWager + "\n");
+                        Console.ResetColor();
+
                         Console.ReadKey();
                     }
                 } while (!goodwager);
 
 
                 Console.Write("Your card: ");
+                Console.ForegroundColor = ConsoleColor.Red;
                 playerHand.printHand();
+                Console.ResetColor();
+                Console.ReadKey();
+
                 Console.Write("Dealer's card: ");
+                Console.ForegroundColor = ConsoleColor.Red;
                 dealerHand.printHand();
+                Console.ResetColor();
+                Console.ReadKey();
 
                 //roundNumber = 1; //internal tracking
 
@@ -114,19 +134,26 @@ namespace FinalProject
                     playerHandValue = playerHand.getValueOfHand();
                     Console.WriteLine("Your total score: " + playerHandValue);
                     Console.WriteLine("Your hand:");
+
+                    Console.ForegroundColor = ConsoleColor.Red;
                     playerHand.printHand();
+                    Console.ResetColor();
+
                     Console.WriteLine();
                 }
                 if (playerHandValue > 21)
                 {
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("busted!");
+                    Console.ResetColor();
+
                     playerMoney -= totalWager;
                     dealerWins();
                 }
                 else if (playerHandValue == 21)
                 {
-                    playerWins();
                     playerMoney += totalWager;
+                    playerWins();
                 }
                 else
                 {
@@ -138,11 +165,13 @@ namespace FinalProject
                     Console.WriteLine();
                     Console.WriteLine("Dealer's value :" + dealerHand.getValueOfHand());
                     Console.WriteLine("Dealer's hand:");
+                    Console.ReadKey();
+
                     dealerHand.printHand();
                     if (dealerHand.getValueOfHand() > 21)
                     {
-                        playerWins();
                         playerMoney += totalWager;
+                        playerWins();
                     }
                     else if (playerHand.getValueOfHand() == dealerHand.getValueOfHand())
                     {
@@ -171,13 +200,18 @@ namespace FinalProject
         public void playerWins()
         {
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Player wins!");
+            Console.ResetColor();
+
         }
 
         public void dealerWins()
         {
             Console.WriteLine();
+            Console.BackgroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Dealer wins!");
+            Console.ResetColor();
         }
 
         public void tie()
