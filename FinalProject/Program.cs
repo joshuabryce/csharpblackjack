@@ -1,4 +1,18 @@
-﻿using System;
+/// Final Project
+/// 
+/// @author: Josh Bryce
+/// 
+///
+/// Problem Statement: A game of blackjack
+/// 
+/// 
+/// Overall Plan:
+/// 1) Use object oriented design to represent a game of blackjack
+/// 2) use classes such as the following: 
+/// card, carddeck, playerhand, a game of blackjack and etc. to represent the game
+/// 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
