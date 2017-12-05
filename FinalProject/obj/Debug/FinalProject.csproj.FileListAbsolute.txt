@@ -19,3 +19,10 @@ A:/JTSRepositories/csharpblackjack/FinalProject/obj/Debug/FinalProject.pdb
 /Users/jshor/Documents/GitHub/csharpblackjack/FinalProject/obj/Debug/FinalProject.csproj.CoreCompileInputs.cache
 /Users/jshor/Documents/GitHub/csharpblackjack/FinalProject/obj/Debug/FinalProject.exe
 /Users/jshor/Documents/GitHub/csharpblackjack/FinalProject/obj/Debug/FinalProject.pdb
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\w7006296\Source\Repos\csharpblackjack\FinalProject\bin\Debug\FinalProject.pdb

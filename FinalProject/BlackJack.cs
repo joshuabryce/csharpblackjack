@@ -64,7 +64,7 @@ namespace FinalProject
 
                 do
                 {
-                    Console.WriteLine("How many chips are you willing to wager? (1 chip = $5");
+                    Console.WriteLine("How many chips are you willing to wager? (1 chip = $5)");
 
                     chipWager = Int32.Parse(Console.ReadLine());
                     if (chipWager < 1)
@@ -79,10 +79,13 @@ namespace FinalProject
                     if (totalWager > playerMoney)
                     {
                         goodwager = false;
+                        Console.WriteLine("The total was $" + totalWager + " and you don't have that much!");
                     }
                     else
                     {
                         goodwager = true;
+                        Console.WriteLine("You have wagered $" + totalWager);
+                        Console.ReadKey();
                     }
                 } while (!goodwager);
 
@@ -96,6 +99,7 @@ namespace FinalProject
 
                 playerHandValue = playerHand.getValueOfHand();
                 Console.WriteLine("Your total score: " + playerHandValue);
+                Console.ReadKey();
                 while (playerHandValue < 21 && hitOrStay != "stay")
                 {
 
